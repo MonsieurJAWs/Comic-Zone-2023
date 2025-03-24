@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* Assignment 2 Custom CSS */
+
+/* Import google fonts (Carter One, IBM Plex Sans) */
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=IBM+Plex+Sans:wght@300&display=swap');
+
+/* Set base font for the page */
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    /* Prevent screen bounce */
+    overscroll-behavior: none;
+    background-color: #e1e8f0;
+}
+
+/* Set the H1 and navbar brand name to the Carter One google font */
+h1, .navbar-brand {
+    font-family: "Carter One";
+}
+
+/* Set all other fonts to the IBM Plex Sans google font */
+h2, h3, p, li, .btn {
+    font-family: "IBM Plex Sans";
+}
+
+/* Add a background color to the header and footer */
+.navbar, footer {
+    background-color: #393f4d;
+}
+
+/* Set the hero banner propertites */
+main section:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ComicStoreBackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+
+/* Adjust the h2, h3, p elements position of the main body (book and author info) */
+.col-sm h2, h3, p {
+    padding: 5%;
+}
+
+/* Adjust the button position */
+.col-sm button {
+    margin: 5%;
+}
+
+/* Add some white-space around the cover and author images */
+.img-fluid {
+    padding: 5%;
+}
+
+/* Add padding to the accordion so it sits in the center of the screen */
+.accordion {
+    padding: 10%;
+}
+
+/* Center the reviews heading */
+.accordion h2 {
+    text-align: center;
+}
+
+/* Change the background color to match the color of the page when opened */
+.accordion .accordion-item {
+    background-color: #e1e8f0;
+}
+
+/* Center the carousel images */
+.d-block {
+    margin: auto;
+}
+
+/* Size the carousel images */
+.carousel-inner img {
+    width: auto;
+    height: 500px;
+  }
+
+/* Change the carousel indicator of the active image to magenta for better visibility */
+.carousel .carousel-indicators .active {
+    background-color: magenta;
+  }
+
+/* For larger screens */
+/* Change the carousel back and next button colors from white to black */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); 
+}
+
+/* For smaller screens, shut the filter off */
+@media screen and (max-width: 426px) {
+    
+    .carousel-control-prev, .carousel-control-next {
+        filter: none;
+    }
+}
+
+footer p {
+    padding: 0%;
+    color: white;
+}
+
+/* Adjust styling for the offcanvas form */
+.g-3 {
+    padding: 10%;
+    background-color: #e1e8f0;
+}
+
+.g-3 h2 {
+    padding: 0%;
+}
